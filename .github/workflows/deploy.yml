@@ -32,21 +32,21 @@ jobs:
 
       # Step 5: Install dependencies
       - name: Install dependencies
-        working-directory: ./docs # Adjust if your package.json is elsewhere
+        working-directory: ./ # Adjust if your package.json is elsewhere
         run: |
           rm -rf node_modules # Clear old dependencies
           bun install
 
       # Step 6: Build the site
       - name: Build the site
-        working-directory: ./docs # Adjust if your build script is elsewhere
+        working-directory: ./ # Adjust if your build script is elsewhere
         run: bun run build
 
       # Step 7: Copy build output to docs folder
       - name: Copy build output to docs
         run: |
           mkdir -p docs # Ensure the docs folder exists
-          cp -r ./docs/.next/* ./docs/ # Adjust 'dist' if your build output folder is different
+          cp -r ./.next/* ./ # Adjust 'dist' if your build output folder is different
 
       # Step 8: Commit changes to docs folder
       - name: Commit changes
@@ -59,5 +59,5 @@ jobs:
 
       # Step 9: Generate Sitemap
       - name: Generate Sitemap
-        working-directory: ./docs
+        working-directory: ./
         run: NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-sitemap.mjs

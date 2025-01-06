@@ -4,7 +4,7 @@ import Typography from '@/components/common/Typography';
 export default function DevPage() {
   return (
     <Section contained gutterY>
-      <Typography variant="headline">Make CodeEdit your own</Typography>
+      <Typography variant="headline">Make Voxa your own</Typography>
     </Section>
   );
 }

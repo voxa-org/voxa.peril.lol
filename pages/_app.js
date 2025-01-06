@@ -11,8 +11,8 @@ function App({ Component, pageProps, router }) {
   const pageData = config.pages[pathname] ?? config.pages['/'];
   const isDefault = defaultPageData === pageData;
   const title = isDefault
-    ? `CodeEdit | A native code editor for macOS`
-    : `${pageData.title} | CodeEdit`;
+    ? `Voxa | A macOS native Discord client`
+    : `${pageData.title} | Voxa`;
   const { description } = pageData;
   const { host } = config;
 
@@ -34,8 +34,8 @@ function App({ Component, pageProps, router }) {
           </>
         )}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@CodeEdit" />
-        <meta name="twitter:creator" content="@CodeEdit" />
+        <meta name="twitter:site" content="@plyght__" />
+        <meta name="twitter:creator" content="@plyght__" />
       </Head>
       <Layout pathname={pathname}>
         <Component {...pageProps} />

@@ -3,7 +3,7 @@
   "title": "Voxa",
   "description": "Voxa, A modern Discord client for macOS, built with SwiftUI. Fully Open Source.",
   "repositoryUrl": "https://github.com/plyght/voxa",
-  "twitter": "@CodeEditApp",
+  "twitter": "@plyght__",
   "pages": {
     "/": {
       "title": "Overview",
@@ -28,6 +28,7 @@
   },
   "links": {
     "githubOrg": "https://github.com/plyght",
+    "githubProject": "https://github.com/plyght/Voxa",
     "githubRepo": "https://github.com/plyght/voxa",
     "githubSponsor": "https://github.com/sponsors/plyght",
     "twitter": "https://twitter.com/plyght__",

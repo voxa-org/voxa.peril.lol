@@ -106,13 +106,13 @@ function Footer() {
         <SocialSection />
         <FooterMini>
           <MiniFooterTop>
-            <div>To view the latest CodeEdit developments, visit <a href={config.links.githubProject}>our roadmap</a>.</div>
+            <div>To view the latest Voxa developments, visit <a href={config.links.githubProject}>our roadmap</a>.</div>
             <ColorSchemeToggle />
           </MiniFooterTop>
           <MiniFooterBottom>
             <LegalCopyright>
               Copyright &copy; {currentYear}{' '}
-              <a href={config.host}>CodeEdit</a>. All rights reserved.
+              <a href={config.host}>Voxa</a>. All rights reserved.
             </LegalCopyright>
             <LegalLinks>
               {/* <LegalLink href="/legal/tos">

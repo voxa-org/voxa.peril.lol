@@ -383,7 +383,7 @@ function Header() {
                 width={32}
                 height={32}
                 src="/product-icon.png"
-                alt="CodeEdit product icon"
+                alt="Voxa product icon"
               />
               <span>{config.title}</span>
           </Title>

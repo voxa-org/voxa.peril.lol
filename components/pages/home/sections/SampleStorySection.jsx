@@ -34,7 +34,7 @@ const WhyUsSection = () => {
               Designed to help your&nbsp;work&nbsp;flow.
             </Typography>
             <Typography variant="intro-elevated" gutterTop>
-              The world’s fastest editor has a completely reimagined design, making CodeEdit more immersive and customizable than ever. And with a streamlined user interface, you’ve got new tools for keeping track of what’s important — and for clearing some headspace when you need it most.
+              The world’s fastest editor has a completely reimagined design, making Voxa more immersive and customizable than ever. And with a streamlined user interface, you’ve got new tools for keeping track of what’s important — and for clearing some headspace when you need it most.
             </Typography>
           </SectionHeader>
         </Column>

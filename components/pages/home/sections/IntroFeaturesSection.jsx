@@ -19,7 +19,7 @@ const IntroFeaturesSection = () => {
               <Info size={28} /> 
             </div>
             <Typography variant="intro">
-              CodeEdit is not meant to replace Xcode but rather supplement it for projects not intended for Apple platforms. We believe every type of developer deserves a great experience and excellent performance.
+              Voxa is crafted to complement Discord's Official client, offering an alternative specifically for Apple platforms. Our goal is to provide every user with an exceptional experience and top-notch performance.
             </Typography>
           </Stack>
         </GridItem>
@@ -28,7 +28,7 @@ const IntroFeaturesSection = () => {
             <Zap size={gap} />
             <Typography variant="intro" gutterTop>macOS Native</Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              Harness the full power of your Mac, something only possible with our completely native architecture developed in Swift.
+              Experience the full power of your Mac with Voxa, built entirely with a native Swift architecture for seamless performance and efficiency.
             </Typography>
           </Stack>
         </GridItem>
@@ -39,7 +39,7 @@ const IntroFeaturesSection = () => {
               Lightweight Yet Powerful
             </Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              Designed to be lean with limitless potential. 
+              Designed to be fast and smooth, making Voxa a joy to use. 
             </Typography>
           </Stack>
         </GridItem>
@@ -50,7 +50,7 @@ const IntroFeaturesSection = () => {
               Completely Open Source
             </Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              CodeEdit is developed for you by developers like you. Don&apos;t like something? Want a new feature? Just create an issue or submit a PR.
+              Voxa is built by developers for developers. Have suggestions or want a new feature? Simply open an issue or submit a pull request.
             </Typography>
           </Stack>
         </GridItem>
@@ -58,11 +58,10 @@ const IntroFeaturesSection = () => {
           <Stack>
             <Sliders size={gap} />
             <Typography variant="intro" gutterTop>
-              Extensible & customizable
+              Fully Featured
             </Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              We aren&apos;t going to guess. Make CodeEdit your own, tailored to
-              your needs.
+              Voxa is packed with all your favorite features of your *old* Discord client, but with a fresh new look and feel.
             </Typography>
           </Stack>
         </GridItem>
@@ -73,7 +72,7 @@ const IntroFeaturesSection = () => {
               Familiar &amp; Intuitive User Interface
             </Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              Our user interface is designed to be familiar for ease-of-use and productivity. 
+              Voxa's UI is designed to be familiar and intuitive, Meaning no new learning.
             </Typography>
           </Stack>
         </GridItem>
@@ -81,10 +80,10 @@ const IntroFeaturesSection = () => {
           <Stack>
             <Tool size={gap} />
             <Typography variant="intro" gutterTop>
-              Better tools to get the job done
+              Easy Installer
             </Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              Feel connected to the code you are writing with tools to keep you on track. 
+              We provide an easy-to-use installer for even the *clumsiest* of users. 
             </Typography>
           </Stack>
         </GridItem>

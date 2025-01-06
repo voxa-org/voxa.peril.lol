@@ -115,7 +115,7 @@ const Markdown = ({
           remarkAlerts,
           [
             remarkGithub,
-            { defaultOrg: 'CodeEditApp', defaultRepo: 'CodeEdit' },
+            { defaultOrg: 'plyght', defaultRepo: 'voxa' },
           ],
           // [remarkEmbedder, { transformers: [CodeSandboxTransformer] }],
           ...remarkPlugins,

@@ -31,7 +31,7 @@ const HeroSection = ({ versionNumber, minimumSystemVersion }) => {
                       width={128}
                       height={128}
                       src="/product-icon.png"
-                      alt="CodeEdit product icon"
+                      alt="Voxa product icon"
                     />
                   </ProductIconWrap>
                   <Typography variant="headline-elevated">

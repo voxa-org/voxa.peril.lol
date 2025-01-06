@@ -67,11 +67,11 @@ export default function DownloadPage({ downloadUrl }) {
                   width={128}
                   height={128}
                   src="/product-icon.png"
-                  alt="CodeEdit product icon"
+                  alt="Voxa product icon"
                 />
               </ProductIconWrap>
               <Typography variant="headline-elevated">
-                Thanks for downloading CodeEdit!
+                Thanks for downloading Voxa!
               </Typography>
               <Typography
                 variant="intro-elevated"
@@ -100,7 +100,7 @@ export default function DownloadPage({ downloadUrl }) {
               <Stack gap>
                 <StepNumber>1</StepNumber>
                 <Typography variant="eyebrow">
-                  Open CodeEdit disk image in Downloads
+                  Open Voxa disk image in Downloads
                 </Typography>
                 <Image
                   width={200}
@@ -121,7 +121,7 @@ export default function DownloadPage({ downloadUrl }) {
               <Stack gap>
                 <StepNumber>2</StepNumber>
                 <Typography variant="eyebrow">
-                  Drag the CodeEdit icon to Applications
+                  Drag the Voxa icon to Applications
                 </Typography>
                 <Image
                   width={256}

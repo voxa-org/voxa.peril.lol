@@ -112,7 +112,7 @@ const ShareSheetWrap = styled.div`
 const ShareSheet = () => {
   const shareLinkInputRef = useRef();
   const shareViaMail = () => {
-    var subject = 'CodeEdit Blog Post';
+    var subject = 'Voxa Blog Post';
     var body = window.location.href;
     var uri = 'mailto:?subject=';
     uri += encodeURIComponent(subject);

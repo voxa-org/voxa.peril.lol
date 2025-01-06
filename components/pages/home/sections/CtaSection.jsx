@@ -25,12 +25,12 @@ export default function CtaSection() {
           width={104}
           height={104}
           src="/product-icon.png"
-          alt="CodeEdit product icon"
+          alt="Voxa product icon"
         />
         <Stack align="center" gap={1}>
           <Typography variant="eyebrow-super">Get started</Typography>
-          <Typography variant="body">Download CodeEdit and see for yourself!</Typography>
-          <Typography variant="body" as="a" href="#">Download CodeEdit <ArrowDownCircle size="1em" style={{ verticalAlign: "middle"}} /></Typography>
+          <Typography variant="body">Download Voxa and see for yourself!</Typography>
+          <Typography variant="body" as="a" href="#">Download Voxa <ArrowDownCircle size="1em" style={{ verticalAlign: "middle"}} /></Typography>
         </Stack>
       </Stack>
     </StyledSection>

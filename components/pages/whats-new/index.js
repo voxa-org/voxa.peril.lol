@@ -37,10 +37,10 @@ export default function WhatsNewPage({ releases }) {
           What’s <HighlightedText>New</HighlightedText>
         </Typography>
         <HeroIntro variant="intro-elevated" gutter>
-          Learn about the latest features available for CodeEdit. For detailed
+          Learn about the latest features available for Voxa. For detailed
           information on updates in the latest released versions, visit the{' '}
-          <a href="https://www.github.com/CodeEditApp/CodeEdit/releases">
-            CodeEdit Release Notes
+          <a href="https://www.github.com/plyght/Voxa/releases">
+            Voxa Release Notes
           </a>
           .
         </HeroIntro>

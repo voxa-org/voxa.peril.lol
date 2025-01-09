@@ -1,1 +1,0 @@
-"use strict";exports.id=8139,exports.ids=[8139],exports.modules={38139:(t,e,a)=>{a.a(t,async(t,r)=>{try{a.r(e),a.d(e,{default:()=>s});var n=a(20997),i=a(28706),d=a(94307),o=t([i]);function s(){return n.jsx(i.Section,{contained:!0,gutterY:!0,children:n.jsx(d.default,{variant:"headline",children:"Make Voxa your own"})})}i=(o.then?(await o)():o)[0],r()}catch(t){r(t)}})}};

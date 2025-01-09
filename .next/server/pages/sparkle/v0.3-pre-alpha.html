@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><title>Voxa | A macOS native Discord client</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"/><meta name="description" content="A modern Discord client for macOS, built with SwiftUI. Fully Open Source."/><meta property="og:url" content="https://www.peril.lol/voxa/sparkle/v0.3-pre-alpha"/><meta property="og:title" content="Voxa | A macOS native Discord client"/><meta property="og:description" content="A modern Discord client for macOS, built with SwiftUI. Fully Open Source."/><meta property="og:image" content="https://www.peril.lol/voxa/social-preview.jpg"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@plyght__"/><meta name="twitter:creator" content="@plyght__"/><meta name="robots" content="noindex"/><meta name="next-head-count" content="12"/><meta charSet="utf-8"/><meta name="apple-mobile-web-app-capable" content="yes"/><link rel="icon" href="/favicon.png" type="image/svg+xml"/><link rel="preload" href="/_next/static/css/8fe06d4502fcdc7a.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/8fe06d4502fcdc7a.css" crossorigin="" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f164db4954bac6ec.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-5429a50ba5373c56.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-fdf56fc4602be5bb.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-3fe4255880d055a8.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/230-3747920c7e2eaeb8.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/386-1232e1a699c25705.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/sparkle/%5Btag%5D-e39e4cb0f16acb77.js" defer="" crossorigin=""></script><script src="/_next/static/q1EkQ_rvLc0oFKGHthLXK/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/q1EkQ_rvLc0oFKGHthLXK/_ssgManifest.js" defer="" crossorigin=""></script><style data-styled="" data-styled-version="6.1.1">.fXvgAl>*:first-child{margin-top:0;}/*!sc*/
+.fXvgAl .centered{text-align:center;}/*!sc*/
+.fXvgAl .rounded-corners{border-radius:15px;}/*!sc*/
+.fXvgAl>*,.fXvgAl p>*,.fXvgAl figure>*{margin-left:auto;margin-right:auto;max-width:653px;}/*!sc*/
+@media only screen and (max-width: 1068px){.fXvgAl>*,.fXvgAl p>*,.fXvgAl figure>*{max-width:576px;}}/*!sc*/
+@media only screen and (max-width: 734px){.fXvgAl>*,.fXvgAl p>*,.fXvgAl figure>*{max-width:87.5%;}}/*!sc*/
+.fXvgAl>.wide,.fXvgAl p>.wide,.fXvgAl figure>.wide{max-width:100%;}/*!sc*/
+.fXvgAl>.full-width,.fXvgAl p>.full-width,.fXvgAl figure>.full-width{width:100vw;max-width:100vw;position:relative;left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}/*!sc*/
+.fXvgAl p{font-size:19px;line-height:1.4211;font-weight:400;letter-spacing:0.012em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;margin-bottom:1.4211em;}/*!sc*/
+.fXvgAl img,.fXvgAl video,.fXvgAl iframe{display:block;margin-top:44px;margin-bottom:44px;}/*!sc*/
+.fXvgAl img.crop-top,.fXvgAl video.crop-top,.fXvgAl iframe.crop-top{object-position:top;}/*!sc*/
+.fXvgAl img.crop-right,.fXvgAl video.crop-right,.fXvgAl iframe.crop-right{object-position:right;}/*!sc*/
+.fXvgAl img.crop-bottom,.fXvgAl video.crop-bottom,.fXvgAl iframe.crop-bottom{object-position:bottom;}/*!sc*/
+.fXvgAl img.crop-left,.fXvgAl video.crop-left,.fXvgAl iframe.crop-left{object-position:left;}/*!sc*/
+.fXvgAl img.ratio-1-1,.fXvgAl video.ratio-1-1,.fXvgAl iframe.ratio-1-1{object-fit:cover;aspect-ratio:1/1;}/*!sc*/
+.fXvgAl img.ratio-5-4,.fXvgAl video.ratio-5-4,.fXvgAl iframe.ratio-5-4{object-fit:cover;aspect-ratio:5/4;}/*!sc*/
+.fXvgAl img.ratio-4-3,.fXvgAl video.ratio-4-3,.fXvgAl iframe.ratio-4-3{object-fit:cover;aspect-ratio:4/3;}/*!sc*/
+.fXvgAl img.ratio-7-5,.fXvgAl video.ratio-7-5,.fXvgAl iframe.ratio-7-5{object-fit:cover;aspect-ratio:7/5;}/*!sc*/
+.fXvgAl img.ratio-3-2,.fXvgAl video.ratio-3-2,.fXvgAl iframe.ratio-3-2{object-fit:cover;aspect-ratio:3/2;}/*!sc*/
+.fXvgAl img.ratio-16-9,.fXvgAl video.ratio-16-9,.fXvgAl iframe.ratio-16-9{object-fit:cover;aspect-ratio:16/9;}/*!sc*/
+.fXvgAl img.ratio-2-1,.fXvgAl video.ratio-2-1,.fXvgAl iframe.ratio-2-1{object-fit:cover;aspect-ratio:2/1;}/*!sc*/
+.fXvgAl img.ratio-21-9,.fXvgAl video.ratio-21-9,.fXvgAl iframe.ratio-21-9{object-fit:cover;aspect-ratio:21/9;}/*!sc*/
+.fXvgAl img.ratio-5-2,.fXvgAl video.ratio-5-2,.fXvgAl iframe.ratio-5-2{object-fit:cover;aspect-ratio:5/2;}/*!sc*/
+.fXvgAl img.ratio-3-1,.fXvgAl video.ratio-3-1,.fXvgAl iframe.ratio-3-1{object-fit:cover;aspect-ratio:3/1;}/*!sc*/
+.fXvgAl img.ratio-4-5,.fXvgAl video.ratio-4-5,.fXvgAl iframe.ratio-4-5{object-fit:cover;aspect-ratio:4/5;}/*!sc*/
+.fXvgAl img.ratio-3-4,.fXvgAl video.ratio-3-4,.fXvgAl iframe.ratio-3-4{object-fit:cover;aspect-ratio:3/4;}/*!sc*/
+.fXvgAl img.ratio-5-7,.fXvgAl video.ratio-5-7,.fXvgAl iframe.ratio-5-7{object-fit:cover;aspect-ratio:5/7;}/*!sc*/
+.fXvgAl img.ratio-2-3,.fXvgAl video.ratio-2-3,.fXvgAl iframe.ratio-2-3{object-fit:cover;aspect-ratio:2/3;}/*!sc*/
+.fXvgAl img.ratio-9-16,.fXvgAl video.ratio-9-16,.fXvgAl iframe.ratio-9-16{object-fit:cover;aspect-ratio:9/16;}/*!sc*/
+.fXvgAl img.ratio-1-2,.fXvgAl video.ratio-1-2,.fXvgAl iframe.ratio-1-2{object-fit:cover;aspect-ratio:1/2;}/*!sc*/
+.fXvgAl img.ratio-2-5,.fXvgAl video.ratio-2-5,.fXvgAl iframe.ratio-2-5{object-fit:cover;aspect-ratio:2/5;}/*!sc*/
+.fXvgAl img.ratio-1-3,.fXvgAl video.ratio-1-3,.fXvgAl iframe.ratio-1-3{object-fit:cover;aspect-ratio:1/3;}/*!sc*/
+.fXvgAl *:not(pre):not(.codeblock)>code{background:var(--fill-gray-quaternary);padding:0.2em 0.4em;margin:0;border-radius:0.25em;white-space:break-spaces;font-size:85%;}/*!sc*/
+.fXvgAl pre{margin-top:28px;margin-bottom:28px;font-size:15px;line-height:25px;font-weight:400;}/*!sc*/
+.fXvgAl pre>code{display:block;color:var(--color-syntax-plain-text);background:var(--color-syntax-background);font-family:'SF Mono',SFMono-Regular,ui-monospace,Menlo,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:1.666;-moz-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:0.5333em 0.9333em;margin:0.5em 0px;overflow:auto;border-radius:15px;}/*!sc*/
+.fXvgAl pre>.codeblock{border-radius:15px;}/*!sc*/
+.fXvgAl p>a:hover,.fXvgAl li>a:hover,.fXvgAl th>a:hover,.fXvgAl td>a:hover,.fXvgAl code>a:hover,.fXvgAl figcaption>a:hover{-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.fXvgAl table{margin-top:44px;margin-bottom:44px;border-spacing:0;overflow-x:auto;width:100%;}/*!sc*/
+.fXvgAl table th,.fXvgAl table td{padding:0.75em 0;border-bottom:1px solid var(--separator-secondary-color);font-size:17px;line-height:25px;}/*!sc*/
+.fXvgAl table th{border-bottom:1.5px solid var(--label-tertiary-color);}/*!sc*/
+.fXvgAl figure{max-width:100%;margin-top:44px;margin-bottom:44px;}/*!sc*/
+.fXvgAl figure img,.fXvgAl figure video,.fXvgAl figure iframe{margin-top:0;margin-bottom:0;}/*!sc*/
+.fXvgAl figure figcaption{display:block;max-width:653px;position:relative;color:#6e6e73;margin-top:16px;font-size:12px;line-height:1.33337;font-weight:600;letter-spacing:-0.01em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}/*!sc*/
+@media only screen and (max-width: 1068px){.fXvgAl figure figcaption{max-width:576px;}}/*!sc*/
+@media only screen and (max-width: 734px){.fXvgAl figure figcaption{max-width:87.5%;}}/*!sc*/
+.fXvgAl h1,.fXvgAl h2,.fXvgAl h3,.fXvgAl h4,.fXvgAl h5,.fXvgAl h6{margin-top:1.25em;margin-bottom:20px;line-height:1.125;}/*!sc*/
+.fXvgAl hr{margin-top:44px;margin-bottom:44px;display:block;border:0;border-top:1px solid var(--separator-color);}/*!sc*/
+.fXvgAl h1{font-size:48px;}/*!sc*/
+.fXvgAl h2{font-size:32px;}/*!sc*/
+.fXvgAl h3{font-size:24px;}/*!sc*/
+.fXvgAl h4{font-size:19px;}/*!sc*/
+.fXvgAl ul,.fXvgAl ol{padding-left:2em;box-sizing:border-box;font-size:19px;margin-bottom:1.4211em;}/*!sc*/
+.fXvgAl ul li,.fXvgAl ol li{margin-top:0.5em;}/*!sc*/
+.fXvgAl ul li>ul,.fXvgAl ol li>ul,.fXvgAl ul li>ol,.fXvgAl ol li>ol{margin-bottom:0;}/*!sc*/
+.fXvgAl blockquote:not(.alert){box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;position:relative;}/*!sc*/
+.fXvgAl blockquote:not(.alert):not(.wide):not(.full-width){padding-left:calc(1em + 4px);font-size:19px;line-height:1.4211;font-weight:400;letter-spacing:0.012em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;margin-bottom:1.4211em;color:var(--label-tertiary-color);}/*!sc*/
+.fXvgAl blockquote:not(.alert):not(.wide):not(.full-width):before{content:'';display:block;position:absolute;left:0;top:0.125em;bottom:0.125em;border-left:4px solid var(--separator-color);}/*!sc*/
+.fXvgAl blockquote:not(.alert) p{margin-bottom:0.7895em;}/*!sc*/
+.fXvgAl blockquote:not(.alert) footer{font-size:14px;line-height:1.28577;font-weight:600;letter-spacing:-0.016em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}/*!sc*/
+.fXvgAl blockquote:not(.alert).wide,.fXvgAl blockquote:not(.alert).full-width{margin-top:72px;margin-bottom:72px;}/*!sc*/
+@media only screen and (max-width: 1068px){.fXvgAl blockquote:not(.alert).wide,.fXvgAl blockquote:not(.alert).full-width{padding:1em;}}/*!sc*/
+.fXvgAl blockquote:not(.alert).wide,.fXvgAl blockquote:not(.alert).full-width,.fXvgAl blockquote:not(.alert).wide p,.fXvgAl blockquote:not(.alert).full-width p{text-align:center;text-wrap:balance;font-size:40px;line-height:1.1;font-weight:700;letter-spacing:0em;}/*!sc*/
+@media only screen and (max-width: 1068px){.fXvgAl blockquote:not(.alert).wide,.fXvgAl blockquote:not(.alert).full-width,.fXvgAl blockquote:not(.alert).wide p,.fXvgAl blockquote:not(.alert).full-width p{font-size:36px;}}/*!sc*/
+@media only screen and (max-width: 734px){.fXvgAl blockquote:not(.alert).wide,.fXvgAl blockquote:not(.alert).full-width,.fXvgAl blockquote:not(.alert).wide p,.fXvgAl blockquote:not(.alert).full-width p{font-size:27px;}}/*!sc*/
+.fXvgAl blockquote:not(.alert).wide:not(:has(p)):before,.fXvgAl blockquote:not(.alert).full-width:not(:has(p)):before,.fXvgAl blockquote:not(.alert).wide:not(:has(p)):after,.fXvgAl blockquote:not(.alert).full-width:not(:has(p)):after,.fXvgAl blockquote:not(.alert).wide p:first-child:before,.fXvgAl blockquote:not(.alert).full-width p:first-child:before,.fXvgAl blockquote:not(.alert).wide p:last-of-type:after,.fXvgAl blockquote:not(.alert).full-width p:last-of-type:after{display:inline-block;width:2em;}/*!sc*/
+.fXvgAl blockquote:not(.alert).wide:not(:has(p)):before,.fXvgAl blockquote:not(.alert).full-width:not(:has(p)):before,.fXvgAl blockquote:not(.alert).wide p:first-child:before,.fXvgAl blockquote:not(.alert).full-width p:first-child:before{margin-left:-2em;text-align:right;content:'“';}/*!sc*/
+.fXvgAl blockquote:not(.alert).wide:not(:has(p)):after,.fXvgAl blockquote:not(.alert).full-width:not(:has(p)):after,.fXvgAl blockquote:not(.alert).wide p:last-of-type:after,.fXvgAl blockquote:not(.alert).full-width p:last-of-type:after{margin-right:-2em;text-align:left;content:'”';}/*!sc*/
+.fXvgAl blockquote:not(.alert).full-width{padding:2em;background:var(--background-secondary-color);box-sizing:border-box;}/*!sc*/
+.fXvgAl blockquote.alert{width:656px;max-width:100%;margin:28px auto;break-inside:avoid;border-radius:var(--aside-border-radius, 15px);border-style:var(--aside-border-style, solid);border-width:var(--aside-border-width, 1px 1px 1px 1px);padding:0.9411764706rem;box-sizing:border-box;text-align:start;}/*!sc*/
+.fXvgAl blockquote.alert p{margin-top:0.4em;margin-bottom:0;width:auto;}/*!sc*/
+.fXvgAl blockquote.alert p:first-child{margin:0;}/*!sc*/
+.fXvgAl blockquote.alert p.alert-label{font-size:1rem;line-height:1.5294417647;font-weight:600;letter-spacing:-0.021em;margin-top:-0.25em;}/*!sc*/
+.fXvgAl blockquote.alert.note{background-color:var(--color-alert-note-background);border-color:var(--color-alert-note-border);box-shadow:0 0 1px 0 var(--color-alert-note-border) inset,0 0 1px 0 var(--color-alert-note-border);}/*!sc*/
+.fXvgAl blockquote.alert.note p.alert-label{color:var(--color-alert-note);}/*!sc*/
+.fXvgAl blockquote.alert.tip{background-color:var(--color-alert-tip-background);border-color:var(--color-alert-tip-border);box-shadow:0 0 1px 0 var(--color-alert-tip-border) inset,0 0 1px 0 var(--color-alert-tip-border);}/*!sc*/
+.fXvgAl blockquote.alert.tip p.alert-label{color:var(--color-alert-tip);}/*!sc*/
+.fXvgAl blockquote.alert.important{background-color:var(--color-alert-important-background);border-color:var(--color-alert-important-border);box-shadow:0 0 1px 0 var(--color-alert-important-border) inset,0 0 1px 0 var(--color-alert-important-border);}/*!sc*/
+.fXvgAl blockquote.alert.important p.alert-label{color:var(--color-alert-important);}/*!sc*/
+.fXvgAl blockquote.alert.warning{background-color:var(--color-alert-warning-background);border-color:var(--color-alert-warning-border);box-shadow:0 0 1px 0 var(--color-alert-warning-border) inset,0 0 1px 0 var(--color-alert-warning-border);}/*!sc*/
+.fXvgAl blockquote.alert.warning p.alert-label{color:var(--color-alert-warning);}/*!sc*/
+.fXvgAl blockquote.alert.caution{background-color:var(--color-alert-caution-background);border-color:var(--color-alert-caution-border);box-shadow:0 0 1px 0 var(--color-alert-caution-border) inset,0 0 1px 0 var(--color-alert-caution-border);}/*!sc*/
+.fXvgAl blockquote.alert.caution p.alert-label{color:var(--color-alert-caution);}/*!sc*/
+.fXvgAl iframe[src^="https://www.youtube.com/"]{display:block;width:100%;height:auto;aspect-ratio:16/9;}/*!sc*/
+.fXvgAl section.footnotes ol{padding-left:1.5em;}/*!sc*/
+.fXvgAl section.footnotes ol li::marker,.fXvgAl section.footnotes ol li p{font-size:0.7895em;width:auto;margin:0;}/*!sc*/
+@media only screen and (max-width: 1068px){.fXvgAl{font-size:17px;line-height:1.47059;font-weight:400;letter-spacing:-0.022em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}}/*!sc*/
+@media only screen and (max-width: 1068px){.sc-hiSaRn,.fXvgAl p,.fXvgAl li,.fXvgAl th,.fXvgAl td,.fXvgAl blockquote:not(.wide):not(.full-width){font-size:17px;line-height:1.47059;font-weight:400;letter-spacing:-0.022em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}.fXvgAl th,.fXvgAl td{font-size:15px;}.fXvgAl pre{font-size:13px;}}/*!sc*/
+data-styled.g39[id="sc-hiSaRn"]{content:"fXvgAl,"}/*!sc*/
+.gLRftP{padding:10px;}/*!sc*/
+.gLRftP img:first-child{display:none;}/*!sc*/
+.gLRftP img{width:100%;}/*!sc*/
+.gLRftP p,.gLRftP ul,.gLRftP ol,.gLRftP li{font-size:14px;}/*!sc*/
+.gLRftP h2{font-size:24px;}/*!sc*/
+.gLRftP img,.gLRftP video,.gLRftP iframe{margin-bottom:10px;}/*!sc*/
+.gLRftP>*{max-width:100%;}/*!sc*/
+.gLRftP>*:last-child{margin-bottom:0;}/*!sc*/
+data-styled.g45[id="sc-iUuxWY"]{content:"gLRftP,"}/*!sc*/
+</style></head><body><div id="__next"><main><div><div class="sc-hiSaRn fXvgAl sc-iUuxWY gLRftP"><h1>⚠️ Important Disclaimer</h1>
+<p>This release is <strong>pre-alpha</strong> and intended primarily for experimentation and feedback. The code is subject to significant changes, and some features may be incomplete or experience breaking changes between versions. <strong>Use at your own risk</strong>, and please report any issues you encounter!</p>
+<hr/>
+<h2>✨ Highlights of This Release</h2>
+<h3>🚀 FakeNitro</h3>
+<ul>
+<li>Introduced a FakeNitro clone from <a href="https://vencord.dev">Vencord</a>. (added by <a href="https://github.com/stossy11">stossy11</a> in <a href="https://github.com/plyght/voxa/issues/2"></a><a href="https://github.com/plyght/voxa/issues/2">#2</a>)</li>
+</ul>
+<h3>🔧 UI &amp; Debugging Improvements</h3>
+<ul>
+<li>Added an icon set to the Xcode project for better visuals and debugging.</li>
+</ul>
+<hr/>
+<h2>📜 Full Changelog</h2>
+<p>For a comprehensive list of updates, see the <a href="https://github.com/plyght/Voxa/commits/?since=2024-12-01&amp;until=2025-01-06">commit history</a>.</p>
+<hr/>
+<h2>📝 Note</h2>
+<p>We recognize that this release may not be fully polished or thoroughly documented. Enhancements to our release documentation and processes are planned for future updates.<br/>
+If you encounter bugs or have suggestions, feel free to open an issue or submit a pull request on the <a href="https://github.com/plyght/Voxa">project repository</a>.</p></div></div></main></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{"release":{"url":"https://api.github.com/repos/plyght/Voxa/releases/193255543","assets_url":"https://api.github.com/repos/plyght/Voxa/releases/193255543/assets","upload_url":"https://uploads.github.com/repos/plyght/Voxa/releases/193255543/assets{?name,label}","html_url":"https://github.com/plyght/Voxa/releases/tag/v0.3-pre-alpha","id":193255543,"author":{"login":"plyght","id":81438024,"node_id":"MDQ6VXNlcjgxNDM4MDI0","avatar_url":"https://avatars.githubusercontent.com/u/81438024?v=4","gravatar_id":"","url":"https://api.github.com/users/plyght","html_url":"https://github.com/plyght","followers_url":"https://api.github.com/users/plyght/followers","following_url":"https://api.github.com/users/plyght/following{/other_user}","gists_url":"https://api.github.com/users/plyght/gists{/gist_id}","starred_url":"https://api.github.com/users/plyght/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/plyght/subscriptions","organizations_url":"https://api.github.com/users/plyght/orgs","repos_url":"https://api.github.com/users/plyght/repos","events_url":"https://api.github.com/users/plyght/events{/privacy}","received_events_url":"https://api.github.com/users/plyght/received_events","type":"User","user_view_type":"public","site_admin":false},"node_id":"RE_kwDONfnvOM4LhNh3","tag_name":"v0.3-pre-alpha","target_commitish":"main","name":"Voxa Add Icons and Add Fake Nitro Clone","draft":false,"prerelease":true,"created_at":"2025-01-06T06:45:17Z","published_at":"2025-01-06T06:51:51Z","assets":[{"url":"https://api.github.com/repos/plyght/Voxa/releases/assets/218313409","id":218313409,"node_id":"RA_kwDONfnvOM4NAzLB","name":"Voxa.0.3.dmg","label":null,"uploader":{"login":"plyght","id":81438024,"node_id":"MDQ6VXNlcjgxNDM4MDI0","avatar_url":"https://avatars.githubusercontent.com/u/81438024?v=4","gravatar_id":"","url":"https://api.github.com/users/plyght","html_url":"https://github.com/plyght","followers_url":"https://api.github.com/users/plyght/followers","following_url":"https://api.github.com/users/plyght/following{/other_user}","gists_url":"https://api.github.com/users/plyght/gists{/gist_id}","starred_url":"https://api.github.com/users/plyght/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/plyght/subscriptions","organizations_url":"https://api.github.com/users/plyght/orgs","repos_url":"https://api.github.com/users/plyght/repos","events_url":"https://api.github.com/users/plyght/events{/privacy}","received_events_url":"https://api.github.com/users/plyght/received_events","type":"User","user_view_type":"public","site_admin":false},"content_type":"application/x-diskcopy","state":"uploaded","size":3317375,"download_count":16,"created_at":"2025-01-06T06:48:50Z","updated_at":"2025-01-06T06:48:51Z","browser_download_url":"https://github.com/plyght/Voxa/releases/download/v0.3-pre-alpha/Voxa.0.3.dmg"}],"tarball_url":"https://api.github.com/repos/plyght/Voxa/tarball/v0.3-pre-alpha","zipball_url":"https://api.github.com/repos/plyght/Voxa/zipball/v0.3-pre-alpha","body":"# ⚠️ Important Disclaimer\r\n\r\nThis release is **pre-alpha** and intended primarily for experimentation and feedback. The code is subject to significant changes, and some features may be incomplete or experience breaking changes between versions. **Use at your own risk**, and please report any issues you encounter!\r\n\r\n---\r\n\r\n## ✨ Highlights of This Release\r\n\r\n### 🚀 FakeNitro\r\n- Introduced a FakeNitro clone from [Vencord](https://vencord.dev). (added by [stossy11](https://github.com/stossy11) in #2)\r\n\r\n### 🔧 UI \u0026 Debugging Improvements\r\n- Added an icon set to the Xcode project for better visuals and debugging.\r\n\r\n---\r\n\r\n## 📜 Full Changelog\r\n\r\nFor a comprehensive list of updates, see the [commit history](https://github.com/plyght/Voxa/commits/?since=2024-12-01\u0026until=2025-01-06).\r\n\r\n---\r\n\r\n## 📝 Note\r\n\r\nWe recognize that this release may not be fully polished or thoroughly documented. Enhancements to our release documentation and processes are planned for future updates.  \r\nIf you encounter bugs or have suggestions, feel free to open an issue or submit a pull request on the [project repository](https://github.com/plyght/Voxa)."}},"__N_SSG":true},"page":"/sparkle/[tag]","query":{"tag":"v0.3-pre-alpha"},"buildId":"q1EkQ_rvLc0oFKGHthLXK","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

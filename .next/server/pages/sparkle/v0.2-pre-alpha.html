@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><title>Voxa | A macOS native Discord client</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"/><meta name="description" content="A modern Discord client for macOS, built with SwiftUI. Fully Open Source."/><meta property="og:url" content="https://www.peril.lol/voxa/sparkle/v0.2-pre-alpha"/><meta property="og:title" content="Voxa | A macOS native Discord client"/><meta property="og:description" content="A modern Discord client for macOS, built with SwiftUI. Fully Open Source."/><meta property="og:image" content="https://www.peril.lol/voxa/social-preview.jpg"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@plyght__"/><meta name="twitter:creator" content="@plyght__"/><meta name="robots" content="noindex"/><meta name="next-head-count" content="12"/><meta charSet="utf-8"/><meta name="apple-mobile-web-app-capable" content="yes"/><link rel="icon" href="/favicon.png" type="image/svg+xml"/><link rel="preload" href="/_next/static/css/8fe06d4502fcdc7a.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/8fe06d4502fcdc7a.css" crossorigin="" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f164db4954bac6ec.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-5429a50ba5373c56.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-fdf56fc4602be5bb.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-3fe4255880d055a8.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/230-3747920c7e2eaeb8.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/386-1232e1a699c25705.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/sparkle/%5Btag%5D-e39e4cb0f16acb77.js" defer="" crossorigin=""></script><script src="/_next/static/q1EkQ_rvLc0oFKGHthLXK/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/q1EkQ_rvLc0oFKGHthLXK/_ssgManifest.js" defer="" crossorigin=""></script><style data-styled="" data-styled-version="6.1.1">.kYbPot>*:first-child{margin-top:0;}/*!sc*/
+.kYbPot .centered{text-align:center;}/*!sc*/
+.kYbPot .rounded-corners{border-radius:15px;}/*!sc*/
+.kYbPot>*,.kYbPot p>*,.kYbPot figure>*{margin-left:auto;margin-right:auto;max-width:653px;}/*!sc*/
+@media only screen and (max-width: 1068px){.kYbPot>*,.kYbPot p>*,.kYbPot figure>*{max-width:576px;}}/*!sc*/
+@media only screen and (max-width: 734px){.kYbPot>*,.kYbPot p>*,.kYbPot figure>*{max-width:87.5%;}}/*!sc*/
+.kYbPot>.wide,.kYbPot p>.wide,.kYbPot figure>.wide{max-width:100%;}/*!sc*/
+.kYbPot>.full-width,.kYbPot p>.full-width,.kYbPot figure>.full-width{width:100vw;max-width:100vw;position:relative;left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}/*!sc*/
+.kYbPot p{font-size:19px;line-height:1.4211;font-weight:400;letter-spacing:0.012em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;margin-bottom:1.4211em;}/*!sc*/
+.kYbPot img,.kYbPot video,.kYbPot iframe{display:block;margin-top:44px;margin-bottom:44px;}/*!sc*/
+.kYbPot img.crop-top,.kYbPot video.crop-top,.kYbPot iframe.crop-top{object-position:top;}/*!sc*/
+.kYbPot img.crop-right,.kYbPot video.crop-right,.kYbPot iframe.crop-right{object-position:right;}/*!sc*/
+.kYbPot img.crop-bottom,.kYbPot video.crop-bottom,.kYbPot iframe.crop-bottom{object-position:bottom;}/*!sc*/
+.kYbPot img.crop-left,.kYbPot video.crop-left,.kYbPot iframe.crop-left{object-position:left;}/*!sc*/
+.kYbPot img.ratio-1-1,.kYbPot video.ratio-1-1,.kYbPot iframe.ratio-1-1{object-fit:cover;aspect-ratio:1/1;}/*!sc*/
+.kYbPot img.ratio-5-4,.kYbPot video.ratio-5-4,.kYbPot iframe.ratio-5-4{object-fit:cover;aspect-ratio:5/4;}/*!sc*/
+.kYbPot img.ratio-4-3,.kYbPot video.ratio-4-3,.kYbPot iframe.ratio-4-3{object-fit:cover;aspect-ratio:4/3;}/*!sc*/
+.kYbPot img.ratio-7-5,.kYbPot video.ratio-7-5,.kYbPot iframe.ratio-7-5{object-fit:cover;aspect-ratio:7/5;}/*!sc*/
+.kYbPot img.ratio-3-2,.kYbPot video.ratio-3-2,.kYbPot iframe.ratio-3-2{object-fit:cover;aspect-ratio:3/2;}/*!sc*/
+.kYbPot img.ratio-16-9,.kYbPot video.ratio-16-9,.kYbPot iframe.ratio-16-9{object-fit:cover;aspect-ratio:16/9;}/*!sc*/
+.kYbPot img.ratio-2-1,.kYbPot video.ratio-2-1,.kYbPot iframe.ratio-2-1{object-fit:cover;aspect-ratio:2/1;}/*!sc*/
+.kYbPot img.ratio-21-9,.kYbPot video.ratio-21-9,.kYbPot iframe.ratio-21-9{object-fit:cover;aspect-ratio:21/9;}/*!sc*/
+.kYbPot img.ratio-5-2,.kYbPot video.ratio-5-2,.kYbPot iframe.ratio-5-2{object-fit:cover;aspect-ratio:5/2;}/*!sc*/
+.kYbPot img.ratio-3-1,.kYbPot video.ratio-3-1,.kYbPot iframe.ratio-3-1{object-fit:cover;aspect-ratio:3/1;}/*!sc*/
+.kYbPot img.ratio-4-5,.kYbPot video.ratio-4-5,.kYbPot iframe.ratio-4-5{object-fit:cover;aspect-ratio:4/5;}/*!sc*/
+.kYbPot img.ratio-3-4,.kYbPot video.ratio-3-4,.kYbPot iframe.ratio-3-4{object-fit:cover;aspect-ratio:3/4;}/*!sc*/
+.kYbPot img.ratio-5-7,.kYbPot video.ratio-5-7,.kYbPot iframe.ratio-5-7{object-fit:cover;aspect-ratio:5/7;}/*!sc*/
+.kYbPot img.ratio-2-3,.kYbPot video.ratio-2-3,.kYbPot iframe.ratio-2-3{object-fit:cover;aspect-ratio:2/3;}/*!sc*/
+.kYbPot img.ratio-9-16,.kYbPot video.ratio-9-16,.kYbPot iframe.ratio-9-16{object-fit:cover;aspect-ratio:9/16;}/*!sc*/
+.kYbPot img.ratio-1-2,.kYbPot video.ratio-1-2,.kYbPot iframe.ratio-1-2{object-fit:cover;aspect-ratio:1/2;}/*!sc*/
+.kYbPot img.ratio-2-5,.kYbPot video.ratio-2-5,.kYbPot iframe.ratio-2-5{object-fit:cover;aspect-ratio:2/5;}/*!sc*/
+.kYbPot img.ratio-1-3,.kYbPot video.ratio-1-3,.kYbPot iframe.ratio-1-3{object-fit:cover;aspect-ratio:1/3;}/*!sc*/
+.kYbPot *:not(pre):not(.codeblock)>code{background:var(--fill-gray-quaternary);padding:0.2em 0.4em;margin:0;border-radius:0.25em;white-space:break-spaces;font-size:85%;}/*!sc*/
+.kYbPot pre{margin-top:28px;margin-bottom:28px;font-size:15px;line-height:25px;font-weight:400;}/*!sc*/
+.kYbPot pre>code{display:block;color:var(--color-syntax-plain-text);background:var(--color-syntax-background);font-family:'SF Mono',SFMono-Regular,ui-monospace,Menlo,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:1.666;-moz-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:0.5333em 0.9333em;margin:0.5em 0px;overflow:auto;border-radius:15px;}/*!sc*/
+.kYbPot pre>.codeblock{border-radius:15px;}/*!sc*/
+.kYbPot p>a:hover,.kYbPot li>a:hover,.kYbPot th>a:hover,.kYbPot td>a:hover,.kYbPot code>a:hover,.kYbPot figcaption>a:hover{-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.kYbPot table{margin-top:44px;margin-bottom:44px;border-spacing:0;overflow-x:auto;width:100%;}/*!sc*/
+.kYbPot table th,.kYbPot table td{padding:0.75em 0;border-bottom:1px solid var(--separator-secondary-color);font-size:17px;line-height:25px;}/*!sc*/
+.kYbPot table th{border-bottom:1.5px solid var(--label-tertiary-color);}/*!sc*/
+.kYbPot figure{max-width:100%;margin-top:44px;margin-bottom:44px;}/*!sc*/
+.kYbPot figure img,.kYbPot figure video,.kYbPot figure iframe{margin-top:0;margin-bottom:0;}/*!sc*/
+.kYbPot figure figcaption{display:block;max-width:653px;position:relative;color:#6e6e73;margin-top:16px;font-size:12px;line-height:1.33337;font-weight:600;letter-spacing:-0.01em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}/*!sc*/
+@media only screen and (max-width: 1068px){.kYbPot figure figcaption{max-width:576px;}}/*!sc*/
+@media only screen and (max-width: 734px){.kYbPot figure figcaption{max-width:87.5%;}}/*!sc*/
+.kYbPot h1,.kYbPot h2,.kYbPot h3,.kYbPot h4,.kYbPot h5,.kYbPot h6{margin-top:1.25em;margin-bottom:20px;line-height:1.125;}/*!sc*/
+.kYbPot hr{margin-top:44px;margin-bottom:44px;display:block;border:0;border-top:1px solid var(--separator-color);}/*!sc*/
+.kYbPot h1{font-size:48px;}/*!sc*/
+.kYbPot h2{font-size:32px;}/*!sc*/
+.kYbPot h3{font-size:24px;}/*!sc*/
+.kYbPot h4{font-size:19px;}/*!sc*/
+.kYbPot ul,.kYbPot ol{padding-left:2em;box-sizing:border-box;font-size:19px;margin-bottom:1.4211em;}/*!sc*/
+.kYbPot ul li,.kYbPot ol li{margin-top:0.5em;}/*!sc*/
+.kYbPot ul li>ul,.kYbPot ol li>ul,.kYbPot ul li>ol,.kYbPot ol li>ol{margin-bottom:0;}/*!sc*/
+.kYbPot blockquote:not(.alert){box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;position:relative;}/*!sc*/
+.kYbPot blockquote:not(.alert):not(.wide):not(.full-width){padding-left:calc(1em + 4px);font-size:19px;line-height:1.4211;font-weight:400;letter-spacing:0.012em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;margin-bottom:1.4211em;color:var(--label-tertiary-color);}/*!sc*/
+.kYbPot blockquote:not(.alert):not(.wide):not(.full-width):before{content:'';display:block;position:absolute;left:0;top:0.125em;bottom:0.125em;border-left:4px solid var(--separator-color);}/*!sc*/
+.kYbPot blockquote:not(.alert) p{margin-bottom:0.7895em;}/*!sc*/
+.kYbPot blockquote:not(.alert) footer{font-size:14px;line-height:1.28577;font-weight:600;letter-spacing:-0.016em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}/*!sc*/
+.kYbPot blockquote:not(.alert).wide,.kYbPot blockquote:not(.alert).full-width{margin-top:72px;margin-bottom:72px;}/*!sc*/
+@media only screen and (max-width: 1068px){.kYbPot blockquote:not(.alert).wide,.kYbPot blockquote:not(.alert).full-width{padding:1em;}}/*!sc*/
+.kYbPot blockquote:not(.alert).wide,.kYbPot blockquote:not(.alert).full-width,.kYbPot blockquote:not(.alert).wide p,.kYbPot blockquote:not(.alert).full-width p{text-align:center;text-wrap:balance;font-size:40px;line-height:1.1;font-weight:700;letter-spacing:0em;}/*!sc*/
+@media only screen and (max-width: 1068px){.kYbPot blockquote:not(.alert).wide,.kYbPot blockquote:not(.alert).full-width,.kYbPot blockquote:not(.alert).wide p,.kYbPot blockquote:not(.alert).full-width p{font-size:36px;}}/*!sc*/
+@media only screen and (max-width: 734px){.kYbPot blockquote:not(.alert).wide,.kYbPot blockquote:not(.alert).full-width,.kYbPot blockquote:not(.alert).wide p,.kYbPot blockquote:not(.alert).full-width p{font-size:27px;}}/*!sc*/
+.kYbPot blockquote:not(.alert).wide:not(:has(p)):before,.kYbPot blockquote:not(.alert).full-width:not(:has(p)):before,.kYbPot blockquote:not(.alert).wide:not(:has(p)):after,.kYbPot blockquote:not(.alert).full-width:not(:has(p)):after,.kYbPot blockquote:not(.alert).wide p:first-child:before,.kYbPot blockquote:not(.alert).full-width p:first-child:before,.kYbPot blockquote:not(.alert).wide p:last-of-type:after,.kYbPot blockquote:not(.alert).full-width p:last-of-type:after{display:inline-block;width:2em;}/*!sc*/
+.kYbPot blockquote:not(.alert).wide:not(:has(p)):before,.kYbPot blockquote:not(.alert).full-width:not(:has(p)):before,.kYbPot blockquote:not(.alert).wide p:first-child:before,.kYbPot blockquote:not(.alert).full-width p:first-child:before{margin-left:-2em;text-align:right;content:'“';}/*!sc*/
+.kYbPot blockquote:not(.alert).wide:not(:has(p)):after,.kYbPot blockquote:not(.alert).full-width:not(:has(p)):after,.kYbPot blockquote:not(.alert).wide p:last-of-type:after,.kYbPot blockquote:not(.alert).full-width p:last-of-type:after{margin-right:-2em;text-align:left;content:'”';}/*!sc*/
+.kYbPot blockquote:not(.alert).full-width{padding:2em;background:var(--background-secondary-color);box-sizing:border-box;}/*!sc*/
+.kYbPot blockquote.alert{width:656px;max-width:100%;margin:28px auto;break-inside:avoid;border-radius:var(--aside-border-radius, 15px);border-style:var(--aside-border-style, solid);border-width:var(--aside-border-width, 1px 1px 1px 1px);padding:0.9411764706rem;box-sizing:border-box;text-align:start;}/*!sc*/
+.kYbPot blockquote.alert p{margin-top:0.4em;margin-bottom:0;width:auto;}/*!sc*/
+.kYbPot blockquote.alert p:first-child{margin:0;}/*!sc*/
+.kYbPot blockquote.alert p.alert-label{font-size:1rem;line-height:1.5294417647;font-weight:600;letter-spacing:-0.021em;margin-top:-0.25em;}/*!sc*/
+.kYbPot blockquote.alert.note{background-color:var(--color-alert-note-background);border-color:var(--color-alert-note-border);box-shadow:0 0 1px 0 var(--color-alert-note-border) inset,0 0 1px 0 var(--color-alert-note-border);}/*!sc*/
+.kYbPot blockquote.alert.note p.alert-label{color:var(--color-alert-note);}/*!sc*/
+.kYbPot blockquote.alert.tip{background-color:var(--color-alert-tip-background);border-color:var(--color-alert-tip-border);box-shadow:0 0 1px 0 var(--color-alert-tip-border) inset,0 0 1px 0 var(--color-alert-tip-border);}/*!sc*/
+.kYbPot blockquote.alert.tip p.alert-label{color:var(--color-alert-tip);}/*!sc*/
+.kYbPot blockquote.alert.important{background-color:var(--color-alert-important-background);border-color:var(--color-alert-important-border);box-shadow:0 0 1px 0 var(--color-alert-important-border) inset,0 0 1px 0 var(--color-alert-important-border);}/*!sc*/
+.kYbPot blockquote.alert.important p.alert-label{color:var(--color-alert-important);}/*!sc*/
+.kYbPot blockquote.alert.warning{background-color:var(--color-alert-warning-background);border-color:var(--color-alert-warning-border);box-shadow:0 0 1px 0 var(--color-alert-warning-border) inset,0 0 1px 0 var(--color-alert-warning-border);}/*!sc*/
+.kYbPot blockquote.alert.warning p.alert-label{color:var(--color-alert-warning);}/*!sc*/
+.kYbPot blockquote.alert.caution{background-color:var(--color-alert-caution-background);border-color:var(--color-alert-caution-border);box-shadow:0 0 1px 0 var(--color-alert-caution-border) inset,0 0 1px 0 var(--color-alert-caution-border);}/*!sc*/
+.kYbPot blockquote.alert.caution p.alert-label{color:var(--color-alert-caution);}/*!sc*/
+.kYbPot iframe[src^="https://www.youtube.com/"]{display:block;width:100%;height:auto;aspect-ratio:16/9;}/*!sc*/
+.kYbPot section.footnotes ol{padding-left:1.5em;}/*!sc*/
+.kYbPot section.footnotes ol li::marker,.kYbPot section.footnotes ol li p{font-size:0.7895em;width:auto;margin:0;}/*!sc*/
+@media only screen and (max-width: 1068px){.kYbPot{font-size:17px;line-height:1.47059;font-weight:400;letter-spacing:-0.022em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}}/*!sc*/
+@media only screen and (max-width: 1068px){.sc-fbkieD,.kYbPot p,.kYbPot li,.kYbPot th,.kYbPot td,.kYbPot blockquote:not(.wide):not(.full-width){font-size:17px;line-height:1.47059;font-weight:400;letter-spacing:-0.022em;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;}.kYbPot th,.kYbPot td{font-size:15px;}.kYbPot pre{font-size:13px;}}/*!sc*/
+data-styled.g68[id="sc-fbkieD"]{content:"kYbPot,"}/*!sc*/
+.kTUrgx{padding:10px;}/*!sc*/
+.kTUrgx img:first-child{display:none;}/*!sc*/
+.kTUrgx img{width:100%;}/*!sc*/
+.kTUrgx p,.kTUrgx ul,.kTUrgx ol,.kTUrgx li{font-size:14px;}/*!sc*/
+.kTUrgx h2{font-size:24px;}/*!sc*/
+.kTUrgx img,.kTUrgx video,.kTUrgx iframe{margin-bottom:10px;}/*!sc*/
+.kTUrgx>*{max-width:100%;}/*!sc*/
+.kTUrgx>*:last-child{margin-bottom:0;}/*!sc*/
+data-styled.g69[id="sc-Gqece"]{content:"kTUrgx,"}/*!sc*/
+</style></head><body><div id="__next"><main><div><div class="sc-fbkieD kYbPot sc-Gqece kTUrgx"><blockquote>
+<p><strong>⚠️ Important Disclaimer</strong><br/>
+This release is pre-alpha and intended primarily for experimentation and feedback. The code may undergo significant changes, and some features may be incomplete or break between versions. Use at your own risk and report any issues you find!</p>
+</blockquote>
+<h2>✨ Highlights of This Release</h2>
+<ul>
+<li><strong>🧹 Memory Leak Prevention</strong>
+<ul>
+<li>Added a <em>weak</em> reference to <code>WKWebView</code> in the <code>Coordinator</code>, preventing strong reference cycles.</li>
+<li>Removed the <code>channelClick</code> message handler in <code>deinit</code> to avoid lingering references within <code>WKUserContentController</code>.</li>
+</ul>
+</li>
+<li><strong>🏗️ Code Quality Enhancements</strong>
+<ul>
+<li>Centralized window-positioning logic and added checks for missing screens to prevent potential errors.</li>
+<li>Provided a fallback HTML page when invalid URLs are encountered, improving user experience.</li>
+<li>Introduced minor logging hooks in SwiftUI’s <code>.onAppear</code> and <code>.onDisappear</code> to simplify debugging.</li>
+</ul>
+</li>
+<li><strong>🔧 UI &amp; Debugging Improvements</strong>
+<ul>
+<li>Applied subtle logging for better insight into the SwiftUI lifecycle.</li>
+</ul>
+</li>
+</ul>
+<h2>📜 Full Changelog</h2>
+<p>For a detailed list of commits, please visit the <a href="https://github.com/plyght/Voxa/commits/?since=2024-12-01&amp;until=2025-01-05">commit history</a>.</p>
+<blockquote>
+<p><strong>📝 Note</strong><br/>
+We acknowledge that this release may not be fully polished or documented. Ongoing improvements to our release documentation and process are planned for future updates. If you encounter any bugs or have suggestions, feel free to open an issue or pull request on the project’s repository.</p>
+</blockquote></div></div></main></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{"release":{"url":"https://api.github.com/repos/plyght/Voxa/releases/193215492","assets_url":"https://api.github.com/repos/plyght/Voxa/releases/193215492/assets","upload_url":"https://uploads.github.com/repos/plyght/Voxa/releases/193215492/assets{?name,label}","html_url":"https://github.com/plyght/Voxa/releases/tag/v0.2-pre-alpha","id":193215492,"author":{"login":"plyght","id":81438024,"node_id":"MDQ6VXNlcjgxNDM4MDI0","avatar_url":"https://avatars.githubusercontent.com/u/81438024?v=4","gravatar_id":"","url":"https://api.github.com/users/plyght","html_url":"https://github.com/plyght","followers_url":"https://api.github.com/users/plyght/followers","following_url":"https://api.github.com/users/plyght/following{/other_user}","gists_url":"https://api.github.com/users/plyght/gists{/gist_id}","starred_url":"https://api.github.com/users/plyght/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/plyght/subscriptions","organizations_url":"https://api.github.com/users/plyght/orgs","repos_url":"https://api.github.com/users/plyght/repos","events_url":"https://api.github.com/users/plyght/events{/privacy}","received_events_url":"https://api.github.com/users/plyght/received_events","type":"User","user_view_type":"public","site_admin":false},"node_id":"RE_kwDONfnvOM4LhDwE","tag_name":"v0.2-pre-alpha","target_commitish":"main","name":"Voxa Memory Leak Fixes \u0026 Code Improvements! (Pre-release)","draft":false,"prerelease":true,"created_at":"2025-01-05T17:09:01Z","published_at":"2025-01-05T17:22:51Z","assets":[{"url":"https://api.github.com/repos/plyght/Voxa/releases/assets/218175659","id":218175659,"node_id":"RA_kwDONfnvOM4NARir","name":"Voxa.0.2.dmg","label":null,"uploader":{"login":"plyght","id":81438024,"node_id":"MDQ6VXNlcjgxNDM4MDI0","avatar_url":"https://avatars.githubusercontent.com/u/81438024?v=4","gravatar_id":"","url":"https://api.github.com/users/plyght","html_url":"https://github.com/plyght","followers_url":"https://api.github.com/users/plyght/followers","following_url":"https://api.github.com/users/plyght/following{/other_user}","gists_url":"https://api.github.com/users/plyght/gists{/gist_id}","starred_url":"https://api.github.com/users/plyght/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/plyght/subscriptions","organizations_url":"https://api.github.com/users/plyght/orgs","repos_url":"https://api.github.com/users/plyght/repos","events_url":"https://api.github.com/users/plyght/events{/privacy}","received_events_url":"https://api.github.com/users/plyght/received_events","type":"User","user_view_type":"public","site_admin":false},"content_type":"application/x-diskcopy","state":"uploaded","size":1100425,"download_count":10,"created_at":"2025-01-05T17:22:44Z","updated_at":"2025-01-05T17:22:45Z","browser_download_url":"https://github.com/plyght/Voxa/releases/download/v0.2-pre-alpha/Voxa.0.2.dmg"}],"tarball_url":"https://api.github.com/repos/plyght/Voxa/tarball/v0.2-pre-alpha","zipball_url":"https://api.github.com/repos/plyght/Voxa/zipball/v0.2-pre-alpha","body":"\u003e **⚠️ Important Disclaimer**  \r\n\u003e This release is pre-alpha and intended primarily for experimentation and feedback. The code may undergo significant changes, and some features may be incomplete or break between versions. Use at your own risk and report any issues you find!\r\n\r\n## ✨ Highlights of This Release\r\n\r\n- **🧹 Memory Leak Prevention**\r\n  - Added a *weak* reference to `WKWebView` in the `Coordinator`, preventing strong reference cycles.\r\n  - Removed the `channelClick` message handler in `deinit` to avoid lingering references within `WKUserContentController`.\r\n- **🏗️ Code Quality Enhancements**\r\n  - Centralized window-positioning logic and added checks for missing screens to prevent potential errors.\r\n  - Provided a fallback HTML page when invalid URLs are encountered, improving user experience.\r\n  - Introduced minor logging hooks in SwiftUI’s `.onAppear` and `.onDisappear` to simplify debugging.\r\n- **🔧 UI \u0026 Debugging Improvements**\r\n  - Applied subtle logging for better insight into the SwiftUI lifecycle.\r\n\r\n## 📜 Full Changelog\r\n\r\nFor a detailed list of commits, please visit the [commit history](https://github.com/plyght/Voxa/commits/?since=2024-12-01\u0026until=2025-01-05).\r\n\r\n\u003e **📝 Note**  \r\n\u003e We acknowledge that this release may not be fully polished or documented. Ongoing improvements to our release documentation and process are planned for future updates. If you encounter any bugs or have suggestions, feel free to open an issue or pull request on the project’s repository."}},"__N_SSG":true},"page":"/sparkle/[tag]","query":{"tag":"v0.2-pre-alpha"},"buildId":"q1EkQ_rvLc0oFKGHthLXK","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

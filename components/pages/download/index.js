@@ -5,6 +5,7 @@ import Typography from '@/components/common/Typography';
 import Image from 'next/image';
 import Tile from '@/components/common/Tile';
 import { mediaQueries } from '@/styles/breakpoints';
+import config from '@/data/config.json';
 
 const StepTile = styled(Tile)`
   overflow: hidden;

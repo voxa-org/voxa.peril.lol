@@ -1,0 +1,1 @@
+"use strict";exports.id=4308,exports.ids=[4308],exports.modules={4308:(t,e,r)=>{r.r(e),r.d(e,{default:()=>s});let s=function(t){if(!t)return null;let e=t.match(/minimumSystemVersion=(\d+\.\d+)/);return e?e[1]:null}}};

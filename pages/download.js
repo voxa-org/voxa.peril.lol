@@ -2,20 +2,32 @@ import { fetchWithCache } from '@/utils/fetchData';
 export { default } from '@/components/pages/download';
 
 export async function getStaticProps() {
-  const data = await fetchWithCache(
-    'latestRelease',
-    'https://api.github.com/repos/plyght/voxa/releases/latest'
+  // 1. Fetch all releases
+  const releases = await fetchWithCache(
+    'allReleases',
+    'https://api.github.com/repos/plyght/voxa/releases'
+  );
+  // This endpoint returns an array of release objects, including prereleases.
+  // Source: https://docs.github.com/en/rest/releases/releases#list-releases
+
+  // 2. Find the first release in the array that is marked as prerelease
+  // or use some filtering logic if you want a specific prerelease tag
+  const preRelease = releases.find((release) => release.prerelease);
+
+  // 3. If there's no prerelease found, fall back to whatever logic you like
+  const selectedRelease = preRelease || releases[0];
+
+  // 4. Match the dmg asset that looks like Voxa.0.x.dmg
+  const appAsset = selectedRelease.assets?.find((asset) =>
+    /^Voxa\.\d+\.\d+\.dmg$/.test(asset.name)
   );
 
-  const appAsset = data.assets?.filter((asset) =>
-    /^Voxa.*\.dmg$/.test(asset.name)
-  )?.[0];
-
+  // 5. Return props
   return {
     props: {
-      versionNumber: data.tag_name || null,
+      versionNumber: selectedRelease.tag_name || null,
       downloadUrl: appAsset?.browser_download_url || null,
     },
-    revalidate: 60 * 60 * 24, // revalidate once every 24 hours
+    revalidate: 60 * 60 * 24, // once every 24 hours
   };
 }

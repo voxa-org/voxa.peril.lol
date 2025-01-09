@@ -17,7 +17,7 @@ export default function HomePage(props) {
   return (
     <>
       <Ribbon onClick={() => window.open(config.links.githubProject)}>
-        Voxa is currently in development. Check out the roadmap.
+        Voxa is currently in development, and so is this website. Check out the roadmap.
       </Ribbon>
       <HeroSection {...props} />
       <IntroFeaturesSection />

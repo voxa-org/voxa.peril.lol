@@ -19,14 +19,14 @@ const IntroFeaturesSection = () => {
               <Info size={28} /> 
             </div>
             <Typography variant="intro">
-              Voxa is crafted to complement Discord's Official client, offering an alternative specifically for Apple platforms. Our goal is to provide every user with an exceptional experience and top-notch performance.
+              Voxa is crafted to complement, not replace, Discord's Official client, offering an alternative specifically for Apple platforms. Our goal is to provide every user with an exceptional experience and improved performance.
             </Typography>
           </Stack>
         </GridItem>
         <GridItem>
           <Stack>
             <Zap size={gap} />
-            <Typography variant="intro" gutterTop>macOS Native</Typography>
+            <Typography variant="intro" gutterTop>Written in Swift<sup>5</sup></Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
               Experience the full power of your Mac with Voxa, built entirely with a native Swift architecture for seamless performance and efficiency.
             </Typography>

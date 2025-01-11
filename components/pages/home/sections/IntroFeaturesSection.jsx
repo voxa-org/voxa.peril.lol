@@ -26,9 +26,9 @@ const IntroFeaturesSection = () => {
         <GridItem>
           <Stack>
             <Zap size={gap} />
-            <Typography variant="intro" gutterTop>Written in Swift<sup>5</sup></Typography>
+            <Typography variant="intro" gutterTop>Native Frontend</Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              Experience the full power of your Mac with Voxa, built entirely with a native Swift architecture for seamless performance and efficiency.
+              Voxa opts for WebKit as its frontend instead of Chromium, significantly enhancing performance and seamlessly integrating with the native macOS aesthetic.
             </Typography>
           </Stack>
         </GridItem>

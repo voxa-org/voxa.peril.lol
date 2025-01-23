@@ -26,52 +26,60 @@ const nextConfig = {
       },
     ],
   },
-webpack: (config, options) => {
-// Add null-loader for binary and xml files
-config.module.rules.push({
-    oneOf: [
-    {
-        test: /\.lockb$/,
-        use: 'null-loader'
-    },
-    {
-        test: /\.xml$/,
-        use: 'null-loader'
+  webpack: (config, options) => {
+    // Add null-loader for binary and XML files
+    config.module.rules.push({
+      oneOf: [
+        {
+          test: /\.lockb$/,
+          use: 'null-loader',
+        },
+        {
+          test: /\.xml$/,
+          use: 'null-loader',
+        },
+      ],
+    });
+
+    // Handle SVG files
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    // Handle markdown files
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    });
+
+    // Configure webpack context for blog posts with limited recursion
+    const blogPath = path.join(__dirname, 'data/blog');
+    config.plugins.push(
+      new webpack.ContextReplacementPlugin(
+        /data\/blog/,
+        blogPath,
+        false, // Disable recursive lookups
+        /\.md$/ // Match only .md files
+      )
+    );
+
+    // Refine rule for public directory files
+    config.module.rules.push({
+      resourceQuery: /\/public\/.+$/,
+      use: 'null-loader',
+    });
+
+    // Debugging: Print rules to ensure correct configuration
+    if (options.isServer) {
+      console.log('Webpack Rules:', config.module.rules);
     }
-    ]
-});
 
-// Handle SVG files
-config.module.rules.push({
-    test: /\.svg$/,
-    use: ['@svgr/webpack']
-});
-
-// Handle markdown files
-config.module.rules.push({
-    test: /\.md$/,
-    use: 'raw-loader'
-});
-
-// Configure webpack context for blog posts
-const blogPath = path.join(__dirname, 'data/blog');
-config.plugins.push(
-    new webpack.ContextReplacementPlugin(
-    /data\/blog/,
-    blogPath,
-    true,
-    /\.md$/
-    )
-);
-
-// Add rule for public directory files
-config.module.rules.push({
-    resourceQuery: /public\/.+$/,
-    use: 'null-loader'
-});
-
-return config;
-},
+    return config;
+  },
+  experimental: {
+    outputFileTracing: false, // Disable output file tracing to avoid recursion issues
+  },
 };
 
 module.exports = nextConfig;

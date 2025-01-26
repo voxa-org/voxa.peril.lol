@@ -413,9 +413,7 @@ function Header() {
                 </MenuToggle>
               </Action>
               <Action>
-                <Link href="/download">
-                  <Button size="sm">Download</Button>
-                </Link>
+                <Button href="/download" size="sm">Download</Button>
               </Action>
             </Actions>
           </Menu>

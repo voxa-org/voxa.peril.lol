@@ -41,9 +41,7 @@ const HeroSection = ({ versionNumber, minimumSystemVersion }) => {
                   <Typography variant="intro-elevated" color="tertiary" gutterBottom>
                     Voxa is a sleek, lightweight, and native macOS Discord client built using SwiftUI. Designed for speed, efficiency, and a modern user experience, it brings the best of Discord to your Mac in a fully optimized package.
                   </Typography>
-                  <Link href="/download" passHref>
-                    <Button size="lg">Download</Button>
-                  </Link>
+                  <Button href="/download" size="lg">Download</Button>
                   <Typography variant="body-reduced" color="tertiary">{versionNumber} | macOS {minimumSystemVersion ? `${minimumSystemVersion.split(".")[0]}+` : ``}</Typography>
                 </Stack>
               </Column>

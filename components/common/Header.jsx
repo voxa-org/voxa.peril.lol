@@ -386,7 +386,7 @@ function Header() {
                 alt="Voxa product icon"
               />
               <span>{config.title}</span>
-          </Title>
+            </Title>
           </Link>
           <Menu>
             <MenuTray>
@@ -413,7 +413,9 @@ function Header() {
                 </MenuToggle>
               </Action>
               <Action>
-                <Button size="sm" onClick={() => router.push("/download")}>Download</Button>
+                <Link href="/download">
+                  <Button size="sm">Download</Button>
+                </Link>
               </Action>
             </Actions>
           </Menu>

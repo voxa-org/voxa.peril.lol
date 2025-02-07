@@ -30,6 +30,7 @@ const ColorSchemeToggleWrap = styled.div`
   }
 `;
 const ToggleOptionText = styled.div`
+  cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
   padding: 1px 6px;

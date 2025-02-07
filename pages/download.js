@@ -14,12 +14,14 @@ export async function getStaticProps() {
   // or use some filtering logic if you want a specific prerelease tag
   const preRelease = releases.find((release) => release.prerelease);
 
+  console.log(preRelease);
+
   // 3. If there's no prerelease found, fall back to whatever logic you like
   const selectedRelease = preRelease || releases[0];
 
   // 4. Match the dmg asset that looks like Voxa.0.x.dmg
   const appAsset = selectedRelease.assets?.find((asset) =>
-    /^Voxa\.\d+\.\d+\.dmg$/.test(asset.name)
+    String(asset.name).endsWith('.dmg')
   );
 
   // 5. Return props

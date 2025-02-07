@@ -7,6 +7,7 @@ import { Row, Column, Section, Stack } from '@/components/common/layout';
 import Button from '@/components/common/Button';
 import HeroImage from '../HeroImage';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const ProductIconWrap = styled.div`
   width: 128px;
@@ -16,7 +17,7 @@ const ProductIconWrap = styled.div`
 
 const HeroSection = ({ versionNumber, minimumSystemVersion }) => {
   const router = useRouter();
-  
+
   return (
     <Parallax
       style={{ overflow: 'visible' }}
@@ -40,8 +41,8 @@ const HeroSection = ({ versionNumber, minimumSystemVersion }) => {
                   <Typography variant="intro-elevated" color="tertiary" gutterBottom>
                     Voxa is a sleek, lightweight, and native macOS Discord client built using SwiftUI. Designed for speed, efficiency, and a modern user experience, it brings the best of Discord to your Mac in a fully optimized package.
                   </Typography>
-                  <Button size="lg" onClick={() => router.push("/download")}>Download</Button>
-                  <Typography variant="body-reduced" color="tertiary">{ versionNumber } | macOS {minimumSystemVersion ? `${minimumSystemVersion.split(".")[0]}+` : ``}</Typography>
+                  <Button href="/download" size="lg">Download</Button>
+                  <Typography variant="body-reduced" color="tertiary">{versionNumber} | macOS {minimumSystemVersion ? `${minimumSystemVersion.split(".")[0]}+` : ``}</Typography>
                 </Stack>
               </Column>
             </Row>

@@ -2,7 +2,7 @@
   "host": "https://voxa.peril.lol",
   "title": "Voxa",
   "description": "Voxa, A modern Discord client for macOS, built with SwiftUI. Fully Open Source.",
-  "repositoryUrl": "https://github.com/plyght/voxa",
+  "repositoryUrl": "https://github.com/voxa-org/voxa",
   "twitter": "@plyght__",
   "pages": {
     "/": {
@@ -21,25 +21,25 @@
       "title": "Download",
       "description": "Download Voxa. A modern Discord client for macOS, built with SwiftUI. Fully Open Source."
     },
-    "https://github.com/plyght/Voxa": {
+    "https://github.com/voxa-org/voxa": {
       "title": "GitHub",
       "description": "Voxa GitHub repository"
     }
   },
   "links": {
     "githubOrg": "https://github.com/plyght",
-    "githubProject": "https://github.com/plyght/Voxa",
-    "githubRepo": "https://github.com/plyght/voxa",
+    "githubProject": "https://github.com/voxa-org/voxa",
+    "githubRepo": "https://github.com/voxa-org/voxa",
     "githubSponsor": "https://github.com/sponsors/plyght",
     "twitter": "https://twitter.com/plyght__",
     "discord": "https://discord.gg/Dps8HnDBpw",
-    "license": "https://github.com/plyght/Voxa/blob/main/LICENSE"
+    "license": "https://github.com/voxa-org/voxa/blob/main/LICENSE"
   },
   "navigation": [
     "/",
     "/whats-new",
     "/blog",
-    "https://github.com/plyght/Voxa"
+    "https://github.com/voxa-org/voxa"
   ],
   "categories": {
     "updates": {

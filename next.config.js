@@ -12,7 +12,7 @@ const nextConfig = {
     ],
   },
   webpack: (config, options) => {
-    // add null-loader for binary and xml files
+    // ignore binary and xml files
     config.module.rules.push({
       oneOf: [
         { test: /\.lockb$/, use: 'null-loader' },
@@ -24,12 +24,12 @@ const nextConfig = {
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
-    // handle markdown files – note: forcing esModule:false can fix issues
+    // handle markdown files
     config.module.rules.push({
       test: /\.md$/,
       use: { loader: 'raw-loader', options: { esModule: false } },
     });
-    // restrict context for blog posts
+    // refine context for blog posts
     const blogPath = path.join(__dirname, 'data/blog');
     config.plugins.push(
       new webpack.ContextReplacementPlugin(
@@ -39,17 +39,22 @@ const nextConfig = {
         /\.md$/
       )
     );
-    // refine rule for public directory files
+    // ignore files from public directory if needed
     config.module.rules.push({
       resourceQuery: /\/public\/.+$/,
+      use: 'null-loader',
+    });
+    // optionally, ignore .txt files if repomix-output.txt remains in your repo
+    config.module.rules.push({
+      test: /\.txt$/,
       use: 'null-loader',
     });
     return config;
   },
   experimental: {
-    outputFileTracing: false,
+    // remove unsupported keys like outputFileTracing if next.js 14 doesn't support them
   },
-  output: 'export',
+  output: 'export'
 };
 
 module.exports = nextConfig;

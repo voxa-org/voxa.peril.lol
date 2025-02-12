@@ -18,7 +18,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const data = await fetchWithCache(
     'releases',
-    'https://api.github.com/repos/voxa-org/voxa/releases
+    'https://api.github.com/repos/voxa-org/voxa/releases'
   );
   const paths = data.map((release) => ({ params: { tag: release.tag_name } }));
 

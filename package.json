@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "rm -rf build && next dev",
-    "build": "rm -rf build && next build",
+    "dev": "next dev",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-sitemap.mjs"
@@ -37,5 +37,8 @@
     "eslint": "^8.55.0",
     "eslint-config-next": "^14.0.4",
     "null-loader": "^4.0.1"
+  },
+  "engines": {
+    "bun": "latest"
   }
 }

@@ -1,3 +1,5 @@
+// File: pages/whats-new/raw/[tag].js
+
 export { default } from '@/components/pages/whats-new/RawRelease'
 import { fetchWithCache } from '@/utils/fetchData';
 
@@ -20,10 +22,15 @@ export async function getStaticPaths() {
     'releases',
     'https://api.github.com/repos/voxa-org/voxa/releases'
   );
-  const paths = data.map((release) => ({ params: { tag: release.tag_name } }));
-
-  return {
-    paths,
-    fallback: false,
-  };
+  
+  if (!Array.isArray(data)) {
+    console.error('expected an array, got:', data);
+    throw new Error('github releases api did not return an array');
+  }
+  
+  const paths = data.map((release) => ({
+    params: { tag: release.tag_name }
+  }));
+  
+  return { paths, fallback: false };
 }

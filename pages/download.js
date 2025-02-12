@@ -5,7 +5,7 @@ export async function getStaticProps() {
   // 1. Fetch all releases
   const releases = await fetchWithCache(
     'allReleases',
-    'https://api.github.com/repos/plyght/voxa/releases'
+    'https://api.github.com/repos/voxa-org/voxa/releases'
   );
   // This endpoint returns an array of release objects, including prereleases.
   // Source: https://docs.github.com/en/rest/releases/releases#list-releases

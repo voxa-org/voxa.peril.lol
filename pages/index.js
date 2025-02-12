@@ -7,7 +7,7 @@ export async function getStaticProps() {
   // Fetch from GitHub
   let data = await fetchWithCache(
     'latestRelease',
-    'https://api.github.com/repos/plyght/voxa/releases/latest'
+    'https://api.github.com/repos/voxa-org/voxa/releases/latest'
   );
 
   // If `data` is somehow null or undefined, set it to an empty object

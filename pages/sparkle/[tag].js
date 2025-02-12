@@ -1,27 +1,16 @@
-export { default } from '@/components/pages/whats-new/RawRelease'
-import { fetchWithCache } from '@/utils/fetchData';
-
-export async function getStaticProps({ params }) {
-  const { tag } = params;
-  const data = await fetchWithCache(
-    'releases',
-    'https://api.github.com/repos/voxa-org/voxa/releases'
-  );
-
-  return {
-    props: {
-      release: data.find((release) => release.tag_name === tag) || null,
-    },
-  };
-}
-
 export async function getStaticPaths() {
   const data = await fetchWithCache(
     'releases',
     'https://api.github.com/repos/voxa-org/voxa/releases'
   );
-  const paths = data.map((release) => ({ params: { tag: release.tag_name } }));
-
+  let paths = [];
+  if (Array.isArray(data)) {
+    paths = data.map((release) => ({ params: { tag: release.tag_name } }));
+  } else {
+    console.error("expected an array of releases, got:", data);
+    // optionally, you can throw an error or return empty paths:
+    // throw new Error("github releases api did not return an array");
+  }
   return {
     paths,
     fallback: false,

@@ -6,82 +6,50 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-        port: '',
-        pathname: '/*/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'github.com',
-        port: '',
-        pathname: '/*/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.apple.com',
-        port: '',
-        pathname: '/*/**',
-      },
+      { protocol: 'https', hostname: 'avatars.githubusercontent.com', pathname: '/*/**' },
+      { protocol: 'https', hostname: 'github.com', pathname: '/*/**' },
+      { protocol: 'https', hostname: 'www.apple.com', pathname: '/*/**' },
     ],
   },
   webpack: (config, options) => {
-    // Add null-loader for binary and XML files
+    // add null-loader for binary and xml files
     config.module.rules.push({
       oneOf: [
-        {
-          test: /\.lockb$/,
-          use: 'null-loader',
-        },
-        {
-          test: /\.xml$/,
-          use: 'null-loader',
-        },
+        { test: /\.lockb$/, use: 'null-loader' },
+        { test: /\.xml$/, use: 'null-loader' },
       ],
     });
-
-    // Handle SVG files
+    // handle svg files
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
-
-    // Handle markdown files
+    // handle markdown files – note: forcing esModule:false can fix issues
     config.module.rules.push({
       test: /\.md$/,
-      use: 'raw-loader',
+      use: { loader: 'raw-loader', options: { esModule: false } },
     });
-
-    // Configure webpack context for blog posts with limited recursion
+    // restrict context for blog posts
     const blogPath = path.join(__dirname, 'data/blog');
     config.plugins.push(
       new webpack.ContextReplacementPlugin(
         /data\/blog/,
         blogPath,
-        false, // Disable recursive lookups
-        /\.md$/ // Match only .md files
+        false,
+        /\.md$/
       )
     );
-
-    // Refine rule for public directory files
+    // refine rule for public directory files
     config.module.rules.push({
       resourceQuery: /\/public\/.+$/,
       use: 'null-loader',
     });
-
-    // Debugging: Print rules to ensure correct configuration
-    if (options.isServer) {
-      console.log('Webpack Rules:', config.module.rules);
-    }
-
     return config;
   },
   experimental: {
-    outputFileTracing: false, // Disable output file tracing to avoid recursion issues
+    outputFileTracing: false,
   },
+  output: 'export',
 };
 
-module.exports = {
-  output: 'export'
-}
+module.exports = nextConfig;

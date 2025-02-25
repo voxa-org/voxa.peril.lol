@@ -1,0 +1,63 @@
+#!/bin/bash
+# Voxa Install Script for macOS (with pre-release support)
+#
+# This script installs Voxa by:
+# 1. Checking the OS (macOS only).
+# 2. Determining the release version from an argument or by fetching the latest release (including pre-releases) via GitHub API.
+# 3. Constructing the download URL based on the version.
+# 4. Downloading the DMG file.
+# 5. Mounting the DMG.
+# 6. Copying Voxa.app to /Applications.
+# 7. Unmounting the DMG and cleaning up.
+#
+# Usage:
+#   ./install_voxa.sh [version]
+# Example:
+#   ./install_voxa.sh 0.6.8  or  ./install_voxa.sh v0.6.8
+# If no version is provided, the latest (including pre-releases) is installed.
+
+set -e
+
+# Verify running on macOS
+if [[ "$(uname)" != "Darwin" ]]; then
+  echo "This script is for macOS only."
+  exit 1
+fi
+
+# Determine release version
+if [ -n "$1" ]; then
+  VERSION="$1"
+  # Prepend 'v' if not present
+  if [[ "$VERSION" != v* ]]; then
+    VERSION="v$VERSION"
+  fi
+else
+  echo "Fetching latest release version (including pre-releases)..."
+  # Fetch the list of releases and take the first one (most recent)
+  VERSION=$(curl -s "https://api.github.com/repos/voxa-org/Voxa/releases?per_page=1" | grep '"tag_name":' | head -n 1 | sed -E 's/.*"([^"]+)".*/\1/')
+fi
+
+echo "Installing Voxa version: $VERSION"
+
+# Remove leading 'v' for DMG filename construction
+VERSION_NO_V=${VERSION#v}
+DMG_FILE="Voxa.${VERSION_NO_V}.dmg"
+DOWNLOAD_URL="https://github.com/voxa-org/Voxa/releases/download/${VERSION}/${DMG_FILE}"
+
+echo "Downloading from: $DOWNLOAD_URL"
+curl -L -o "$DMG_FILE" "$DOWNLOAD_URL"
+
+echo "Mounting DMG..."
+# Mount the DMG and capture the mount point
+MOUNT_DIR=$(hdiutil attach "$DMG_FILE" | grep Volumes | awk '{print $3}')
+
+echo "Copying Voxa.app to /Applications..."
+cp -R "$MOUNT_DIR/Voxa.app" /Applications/
+
+echo "Unmounting DMG..."
+hdiutil detach "$MOUNT_DIR"
+
+echo "Cleaning up downloaded DMG..."
+rm "$DMG_FILE"
+
+echo "Installation complete. Voxa is now available in /Applications."

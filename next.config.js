@@ -26,7 +26,21 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/install',
+        destination: '/scripts/install',
+      },
+    ];
+  },
   webpack: (config, options) => {
+    // Add a rule to ignore the install script so it's not processed by webpack.
+    config.module.rules.push({
+      test: /public\/scripts\/install$/,
+      use: 'null-loader',
+    });
+    
     // ignore binary files and xml files
     config.module.rules.push({
       oneOf: [
